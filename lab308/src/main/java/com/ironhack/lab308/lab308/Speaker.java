@@ -14,6 +14,42 @@ public class Speaker {
     @JoinColumn(name = "conference_id")
     private Conference conference;
 
-    // getters setters
 
+    // Constructors
+    public Speaker() {
+        // No-argument constructor
+    }
+
+    // Getters and Setters
+    public Long getId() {
+        return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public int getPresentationDuration() {
+        return presentationDuration;
+    }
+
+    public void setPresentationDuration(int presentationDuration) {
+        this.presentationDuration = presentationDuration;
+    }
+
+    public Conference getConference() {
+        return conference;
+    }
+
+    public void setConference(Conference conference) {
+        this.conference = conference;
+    }
 }
