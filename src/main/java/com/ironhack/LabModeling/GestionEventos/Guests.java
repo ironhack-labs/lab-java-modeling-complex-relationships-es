@@ -13,4 +13,28 @@ public class Guests {
     @ManyToOne
     @JoinColumn(name = "events_id")
     private Events events;
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public GuestsStatus getStatus() {
+        return status;
+    }
+
+    public void setStatus(GuestsStatus status) {
+        this.status = status;
+    }
+
+    public Events getEvents() {
+        return events;
+    }
+
+    public void setEvents(Events events) {
+        this.events = events;
+    }
 }

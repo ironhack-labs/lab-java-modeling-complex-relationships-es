@@ -1,8 +1,6 @@
 package com.ironhack.LabModeling.GestionEventos;
 
-import jakarta.persistence.DiscriminatorValue;
-import jakarta.persistence.Entity;
-import jakarta.persistence.OneToMany;
+import jakarta.persistence.*;
 
 import java.util.List;
 
@@ -10,6 +8,7 @@ import java.util.List;
 @DiscriminatorValue("conferences")
 public class Conference extends Events{
 
-    @OneToMany(mappedBy = "conference")
-    private List<Speaker> speakers;
+    @ManyToOne
+    @JoinColumn(name = "speakers_id")
+    private Speaker speaker;
 }
