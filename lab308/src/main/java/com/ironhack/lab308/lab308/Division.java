@@ -14,8 +14,8 @@ public class Division {
     private String district;
 
     @ManyToOne
-    @JoinColumn(name = "member_id")
-    private Member president;
+    @JoinColumn(name = "president_id")
+    private Member president; // Representing the president as a Member object
 
     @OneToMany(mappedBy = "division", cascade = CascadeType.ALL, orphanRemoval = true)
     private List<Member> members;
