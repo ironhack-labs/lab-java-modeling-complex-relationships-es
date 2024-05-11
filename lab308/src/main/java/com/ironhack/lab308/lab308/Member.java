@@ -13,7 +13,7 @@ public class Member {
     private String name;
 
     @Enumerated(EnumType.STRING)
-    private MemberStatus; // status property
+    private MemberStatus status; // status property
 
     @Temporal(TemporalType.DATE)
     private Date renewalDate;

@@ -18,6 +18,14 @@ public class Event {
 
     @OneToMany(mappedBy = "event", cascade = CascadeType.ALL, orphanRemoval = true)
     private List<Guest> guests;
+
+    protected Long getId() {
+        return Long.valueOf(id);
+    }
+
+    protected Date getDate() {
+        return date;
+    }
     // getters setters
 
 }

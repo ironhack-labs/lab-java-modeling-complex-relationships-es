@@ -14,7 +14,7 @@ public class Division {
     private String district;
 
     @ManyToOne
-    @JoinColumn(name = "president_id")
+    @JoinColumn(name = "member_id")
     private Member president;
 
     @OneToMany(mappedBy = "division", cascade = CascadeType.ALL, orphanRemoval = true)
