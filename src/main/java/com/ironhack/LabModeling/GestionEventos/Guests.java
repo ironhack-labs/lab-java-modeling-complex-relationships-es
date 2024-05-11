@@ -8,6 +8,8 @@ public class Guests {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
     private String name;
+
+    @Enumerated
     private GuestsStatus status;
 
     @ManyToOne
