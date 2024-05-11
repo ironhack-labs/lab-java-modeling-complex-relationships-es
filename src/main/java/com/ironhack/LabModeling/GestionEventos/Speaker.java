@@ -12,8 +12,14 @@ public class Speaker {
     private String name;
     private long presentationDuration;
 
-    @OneToMany(mappedBy = "speaker")
+    @ManyToMany
+    @JoinTable(
+            name = "conference_speakers",
+            inverseJoinColumns = @JoinColumn(name = "conference_id"),
+            joinColumns = @JoinColumn(name = "speaker_id")
+    )
     private List<Conference> conferences;
+
 
     public String getName() {
         return name;

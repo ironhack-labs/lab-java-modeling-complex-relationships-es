@@ -8,7 +8,12 @@ import java.util.List;
 @DiscriminatorValue("conferences")
 public class Conference extends Events{
 
-    @ManyToOne
-    @JoinColumn(name = "speakers_id")
-    private Speaker speaker;
+    @ManyToMany
+    @JoinTable(
+            name = "conference_speakers",
+            joinColumns = @JoinColumn(name = "conference_id"),
+            inverseJoinColumns = @JoinColumn(name = "speaker_id")
+    )
+    private List<Speaker> speakers;
+
 }
