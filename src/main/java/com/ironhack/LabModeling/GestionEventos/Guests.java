@@ -16,6 +16,10 @@ public class Guests {
     @JoinColumn(name = "events_id")
     private Events events;
 
+    public int getId() {
+        return id;
+    }
+
     public String getName() {
         return name;
     }

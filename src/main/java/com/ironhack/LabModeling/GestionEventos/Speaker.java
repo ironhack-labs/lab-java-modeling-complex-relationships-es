@@ -20,6 +20,9 @@ public class Speaker {
     )
     private List<Conference> conferences;
 
+    public int getId() {
+        return id;
+    }
 
     public String getName() {
         return name;

@@ -20,6 +20,10 @@ public abstract class Events {
     @OneToMany(mappedBy = "events")
     private List<Guests> guests;
 
+    public int getId() {
+        return id;
+    }
+
     public Date getDate() {
         return date;
     }

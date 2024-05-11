@@ -21,6 +21,10 @@ public class Member {
     @JoinColumn(name = "division_id")
     private Division division;
 
+    public Long getId() {
+        return id;
+    }
+
     public String getName() {
         return name;
     }

@@ -21,6 +21,10 @@ public class Division {
     @OneToMany(mappedBy = "division")
     private List<Member> members;
 
+    public Long getId() {
+        return id;
+    }
+
     public String getName() {
         return name;
     }
