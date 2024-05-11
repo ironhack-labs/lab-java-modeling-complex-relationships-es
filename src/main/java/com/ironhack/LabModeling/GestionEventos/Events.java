@@ -12,8 +12,13 @@ public abstract class Events {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
+
+    @Temporal(TemporalType.TIMESTAMP)
     private Date date;
+
+    @Temporal(TemporalType.TIME)
     private long duration;
+
     private String location;
     private String title;
 
@@ -28,7 +33,7 @@ public abstract class Events {
         return date;
     }
 
-    public void setDate() {
+    public void setDate(Date date) {
         this.date = date;
     }
 

@@ -15,6 +15,7 @@ public class Member {
     @Enumerated
     private MemberStatus status;
 
+    @Temporal(TemporalType.DATE)
     private Date renewalDate;
 
     @ManyToOne
