@@ -2,6 +2,8 @@ package com.ironhack.Lab38.model.Association;
 
 import jakarta.persistence.*;
 
+import java.util.Date;
+
 @Entity
 @Table(name = "members")
 public class Member {
@@ -20,7 +22,7 @@ public class Member {
     private Status status;
 
     @Column(name = "renewal_date")
-    private String renewalDate;
+    private Date renewalDate;
 
     public Long getMemberId() {
         return memberId;
@@ -54,11 +56,11 @@ public class Member {
         this.status = status;
     }
 
-    public String getRenewalDate() {
+    public Date getRenewalDate() {
         return renewalDate;
     }
 
-    public void setRenewalDate(String renewalDate) {
+    public void setRenewalDate(Date renewalDate) {
         this.renewalDate = renewalDate;
     }
 }

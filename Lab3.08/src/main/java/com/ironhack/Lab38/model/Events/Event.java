@@ -6,6 +6,7 @@ import java.util.*;
 @Entity
 @Table(name = "events")
 @Inheritance(strategy = InheritanceType.JOINED)
+@DiscriminatorColumn(name="event_type", discriminatorType = DiscriminatorType.STRING)
 public class Event {
 
     @Id

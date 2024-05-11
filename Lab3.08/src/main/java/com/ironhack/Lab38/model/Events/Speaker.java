@@ -12,8 +12,8 @@ public class Speaker {
     private String name;
     private Integer presentationDuration;
 
-    @ManyToOne()
-    @JoinColumn(name = "conference_id", referencedColumnName = "id")
+    @ManyToOne
+    @JoinColumn(name = "conference_id")
     private Conference conference;
 
     public Long getId() {
