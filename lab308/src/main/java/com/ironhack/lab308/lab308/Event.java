@@ -21,13 +21,15 @@ public class Event {
     @OneToMany(mappedBy = "event", cascade = CascadeType.ALL, orphanRemoval = true)
     private List<Guest> guests;
 
-    protected Long getId() {
-        return Long.valueOf(id);
+    private Long getId() {
+        return id;
     }
 
-    protected Date getDate() {
+    private Date getDate() {
         return date;
     }
-    // getters setters
 
+    public void setId(Long id) {
+        this.id = id;
+    }
 }

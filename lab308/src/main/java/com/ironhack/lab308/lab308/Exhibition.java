@@ -9,7 +9,11 @@ import java.util.Date;
 @DiscriminatorValue("exhibition")
 public class Exhibition extends Event {
     // no additional fields
-    // getters setters
+
+    // Constructors
+    public Exhibition() {
+        // No-argument constructor
+    }
 
     // Getters
     public Long getId() { return id; }

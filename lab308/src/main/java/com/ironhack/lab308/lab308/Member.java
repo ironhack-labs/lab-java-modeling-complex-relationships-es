@@ -1,7 +1,6 @@
 package com.ironhack.lab308.lab308;
 
 import jakarta.persistence.*;
-
 import java.util.Date;
 
 @Entity
@@ -14,7 +13,6 @@ public class Member {
     private MemberStatus status; // status property
     @Temporal(TemporalType.DATE)
     private Date renewalDate;
-
 
     // Constructors
     public Member() {
@@ -38,11 +36,11 @@ public class Member {
         this.name = name;
     }
 
-    public String getStatus() {
+    public MemberStatus getStatus() {
         return status;
     }
 
-    public void setStatus(String status) {
+    public void setStatus(MemberStatus status) {
         this.status = status;
     }
 
