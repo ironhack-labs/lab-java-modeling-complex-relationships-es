@@ -27,8 +27,7 @@ public class Division {
 
     public Division() {    }
 
-    public Division(Long divisionId, String name, String district, Member president, List<Member> members) {
-        this.divisionId = divisionId;
+    public Division(String name, String district, Member president, List<Member> members) {
         this.name = name;
         this.district = district;
         this.president = president;

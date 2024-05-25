@@ -28,8 +28,7 @@ public class Member {
 
     public Member() {    }
 
-    public Member(Long memberId, String name, Status status, LocalDate renewalDate, Division division) {
-        this.memberId = memberId;
+    public Member(String name, Status status, LocalDate renewalDate, Division division) {
         this.name = name;
         this.status = status;
         this.renewalDate = renewalDate;

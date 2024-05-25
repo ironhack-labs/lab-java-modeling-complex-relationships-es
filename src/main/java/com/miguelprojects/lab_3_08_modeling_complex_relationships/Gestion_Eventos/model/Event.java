@@ -27,8 +27,7 @@ public class Event {
 
     public Event() {    }
 
-    public Event(Long eventId, int duration, String location, String title, List<Guest> guestList) {
-        this.eventId = eventId;
+    public Event(int duration, String location, String title, List<Guest> guestList) {
         this.duration = duration;
         this.location = location;
         this.title = title;

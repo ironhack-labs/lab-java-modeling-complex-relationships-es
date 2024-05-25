@@ -23,8 +23,7 @@ public class Speaker{
 
     public Speaker() {    }
 
-    public Speaker(Long speakerId, String name, int presentationDuration, Conference speakerConference) {
-        this.speakerId = speakerId;
+    public Speaker(String name, int presentationDuration, Conference speakerConference) {
         this.name = name;
         this.presentationDuration = presentationDuration;
         this.speakerConference = speakerConference;

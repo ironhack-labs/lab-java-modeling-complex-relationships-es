@@ -23,8 +23,7 @@ public class Guest {
 
     public Guest() {    }
 
-    public Guest(Long guestId, String name, Status status, Event eventGuest) {
-        this.guestId = guestId;
+    public Guest(String name, Status status, Event eventGuest) {
         this.name = name;
         this.status = status;
         this.eventGuest = eventGuest;
