@@ -2,7 +2,7 @@ package com.miguelprojects.lab_3_08_modeling_complex_relationships.Asociacion_En
 
 import jakarta.persistence.*;
 
-import java.util.Date;
+import java.time.LocalDate;
 import java.util.Objects;
 
 @Entity
@@ -20,7 +20,7 @@ public class Member {
     private Status status;
 
     @Column(name = "renewal_date")
-    private Date renewalDate;
+    private LocalDate renewalDate;
 
     @ManyToOne
     @JoinColumn(name = "division", referencedColumnName = "division_id")
@@ -28,7 +28,7 @@ public class Member {
 
     public Member() {    }
 
-    public Member(Long memberId, String name, Status status, Date renewalDate, Division division) {
+    public Member(Long memberId, String name, Status status, LocalDate renewalDate, Division division) {
         this.memberId = memberId;
         this.name = name;
         this.status = status;
@@ -56,11 +56,11 @@ public class Member {
         this.status = status;
     }
 
-    public Date getRenewalDate() {
+    public LocalDate getRenewalDate() {
         return renewalDate;
     }
 
-    public void setRenewalDate(Date renewalDate) {
+    public void setRenewalDate(LocalDate renewalDate) {
         this.renewalDate = renewalDate;
     }
 

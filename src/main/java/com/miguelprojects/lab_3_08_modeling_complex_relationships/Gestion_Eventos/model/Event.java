@@ -7,7 +7,7 @@ import java.util.Objects;
 
 @Entity
 @Table(name = "events")
-@Inheritance(strategy = InheritanceType.JOINED)
+@Inheritance(strategy = InheritanceType.SINGLE_TABLE)
 
 public class Event {
     @Id
