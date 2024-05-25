@@ -15,6 +15,8 @@ public class Guest {
     private Long guestId;
 
     private String name;
+
+    @Enumerated(EnumType.STRING)
     private Status status;
 
     @ManyToOne
