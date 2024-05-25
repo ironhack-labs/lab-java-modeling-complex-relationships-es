@@ -8,6 +8,8 @@ import java.util.Objects;
 @Entity
 @Table(name = "events")
 @Inheritance(strategy = InheritanceType.SINGLE_TABLE)
+@DiscriminatorColumn(name = "Event type")
+@DiscriminatorValue("EVENT")
 
 public class Event {
     @Id

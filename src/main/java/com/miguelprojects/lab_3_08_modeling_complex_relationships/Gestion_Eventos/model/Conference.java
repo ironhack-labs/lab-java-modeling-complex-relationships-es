@@ -7,6 +7,7 @@ import java.util.Objects;
 
 @Entity
 @Table(name = "conferences")
+@DiscriminatorValue("CONFERENCE")
 
 public class Conference extends Event{
     // No necesita id porque lo hereda de event

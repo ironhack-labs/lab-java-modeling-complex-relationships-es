@@ -7,6 +7,7 @@ import java.util.Objects;
 
 @Entity
 @Table(name = "expositions")
+@DiscriminatorValue("EXPOSITION")
 
 public class Exposition extends Event{
 
