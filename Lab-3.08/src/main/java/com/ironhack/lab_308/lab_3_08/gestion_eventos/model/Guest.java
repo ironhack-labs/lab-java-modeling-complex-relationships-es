@@ -21,7 +21,8 @@ public class Guest {
     @ManyToMany
     @JoinTable(
             name = "guest_event",
-            joinColumns = {@JoinColumn(name = "event_id")}
+            joinColumns = {@JoinColumn(name = "guest_id")},
+            inverseJoinColumns = {@JoinColumn(name = "event_id")}
     )
     private List<Event> events;
 
