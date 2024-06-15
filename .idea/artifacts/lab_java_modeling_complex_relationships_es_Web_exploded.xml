@@ -1,0 +1,13 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="lab-java-modeling-complex-relationships-es:Web exploded">
+    <output-path>$PROJECT_DIR$/out/artifacts/lab_java_modeling_complex_relationships_es_Web_exploded</output-path>
+    <root id="root">
+      <element id="javaee-facet-resources" facet="lab-java-modeling-complex-relationships-es/web/Web" />
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="lab-java-modeling-complex-relationships-es" />
+        </element>
+      </element>
+    </root>
+  </artifact>
+</component>
